@@ -13,7 +13,7 @@ class Application
         resp.write "#{item}\n"
       end
     elsif req.path.match(/add/) #takes in GET Param of the key item (k,v). check if in @@items and add it to cart
-      search_term = req.params["q"]
+      search_item = req.params["q"]
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
       if @@cart.empty?
@@ -31,6 +31,10 @@ class Application
     end
 
     resp.finish
+  end
+
+  def handle_add(search_item)
+
   end
 
   def handle_search(search_term)
