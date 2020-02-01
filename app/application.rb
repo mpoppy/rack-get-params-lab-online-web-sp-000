@@ -39,6 +39,7 @@ class Application
       return "Added #{search_item}"
     else
       return "We don't have that item"
+    end
   end
 
   def handle_search(search_term)
