@@ -17,7 +17,6 @@ class Application
         @@cart.each do |c|
         resp.write "#{c}"
         end
-        resp.write "Your cart is empty"
       else
         resp.write "Your cart is empty"
       end
