@@ -34,7 +34,7 @@ class Application
   end
 
   def handle_add(search_item)
-
+    if @@items.include?(search_item)
   end
 
   def handle_search(search_term)
