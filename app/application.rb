@@ -35,6 +35,8 @@ class Application
 
   def handle_add(search_item)
     if @@items.include?(search_item)
+      @@cart << search_item
+      return "Added #{search_item}"
   end
 
   def handle_search(search_term)
