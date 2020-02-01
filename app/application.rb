@@ -12,7 +12,7 @@ class Application
       @@items.each do |item|
         resp.write "#{item}\n"
       end
-    elsif req.path.match(/add/)
+    elsif req.path.match(/add/) #takes in GET Param of the key item (k,v). check if in @@items and add it to cart
 
     elsif req.path.match(/cart/)
       if @@cart.empty?
